@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PetsCradle</string>
+
+    //facebook login button integration facebook app Id and protocol scheme
+    <string name="facebook_app_id">989038281275512</string>
+    <string name="fb_login_protocol_scheme">fb989038281275512</string>
+
+
 </resources>
