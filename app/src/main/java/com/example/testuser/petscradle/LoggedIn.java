@@ -19,6 +19,9 @@ public class LoggedIn extends AppCompatActivity {
     FirebaseAuth.AuthStateListener mAuthListener;
     GoogleSignInClient mGoogleSignInClient;
 
+    //to move when menu is completed***************************************
+    Button walk_tracker;
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -58,6 +61,16 @@ public class LoggedIn extends AppCompatActivity {
                 mAuth.signOut();
                 signOut();
 
+            }
+        });
+
+
+        //to move when menu is completed***************************************
+        walk_tracker=(Button) findViewById(R.id.btnWalk);
+        walk_tracker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoggedIn.this, googleMaps1.class));
             }
         });
     }
